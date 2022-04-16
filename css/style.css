@@ -45,6 +45,7 @@ header > .nav {
     border-radius: 4px;
     color: white;
     background-color: rgba(250, 1, 1, 0.671);
+    cursor: pointer;
 }
 
 .nav > a:hover {
@@ -55,6 +56,201 @@ header > .nav {
 
 .nav > a:nth-child(5) {
     grid-column: 1/3;
+}
+
+/* ESTILOS PARA EL MAIN */
+
+main {
+    padding: 0 10px;
+}
+
+/* ESTILOS PARA LA SECCION MULTIMEDIA */
+
+.seccionMultimedia {
+    /* border: 1px solid red; */
+}
+
+.seccionMultimedia > article {
+    color: white;
+}
+
+.seccionMultimedia > article > h2 {
+    text-align: center;
+    padding: 10px 0;
+    font-size: 25px;
+}
+
+.seccionMultimedia > article > P {
+    text-align: center;
+}
+
+.videoMultimedia {
+    /* border: 1px solid yellow; */
+    width: 100%;
+    height: 315px;
+    overflow: hidden;
+}
+
+.videoMultimedia > iframe {
+    width: 100%;
+}
+
+/* ESTILOS PARA LA SECCION TENDENCIA */
+
+
+.seccionTendencia {
+    padding: 20px 0;
+}
+.cajaImagenTendencia {
+    width: 100%;
+    overflow: hidden;
+    height: 350px;
+    /* border: 1px solid blue; */
+}
+
+
+.cajaImagenTendencia > img {
+    width: 100%;
+}
+
+.seccionTendencia > article {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+}
+
+.seccionTendencia > article > h2 {
+    padding: 10px 0;
+    font-size: 25px;
+}
+
+.seccionTendencia > article > p {
+    text-align: center;
+}
+
+.botonConocer {
+    padding: 10px 0;
+    /* border: 1px solid yellow; */
+    margin-top: 10px;
+}
+
+.botonConocer > a {
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.botonConocer:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 2px 2px 4px white;
+    transition: 0.5s;
+}
+
+/* ESTILOS PARA SECCION CARDS */
+
+.seccionCards {
+    padding: 10px 0;
+    /* border: 1px solid red; */
+    width: 100%;
+}
+
+.card {
+    /* border: 1px solid orange; */
+    background-color: rgba(102, 100, 100, 0.418);
+    border-radius: 4px;
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.329);
+}
+
+.card:hover {
+    transform: translate(-5px, -5px);
+    transition: 0.7s;
+}
+
+.imagenCard {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    /* border: 1px solid green; */
+}
+
+.imagenCard > img {
+    width: 100%;
+    border-radius: 4px 4px 4px 4px;
+}
+
+.contenidoCard {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenidoCard > h2 {
+    padding: 10px 0;
+}
+
+.contenidoCard > p {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+
+
+
+
+/* ESTILOS PARA EL FOOTER */
+
+footer {
+    /* border: 1px solid red; */
+    padding: 10px;
+    color: white;
+}
+
+footer h2 {
+    border-top: 1px solid white;
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+    /* border: 1px solid red; */
+}
+
+footer .primerosDerechos {
+    /* border: 1px solid green; */
+    text-align: center;
+    padding: 10px;
+}
+
+footer .segundosDerechos {
+    text-align: center;
+    padding: 10px;
+}
+
+footer .redesSociales {
+    /* border: 1px solid yellow; */
+    display: flex;
+    justify-content: space-around;
+    font-size: 25px;
+    padding: 10px;
+}
+
+footer .fa-twitter {
+    color: rgb(53, 65, 238);
+}
+
+footer .fa-facebook-square {
+    color: rgb(90, 92, 228);
+}
+
+footer .fa-instagram {
+    color: rgb(184, 122, 241);
+}
+
+footer .fa-calendar-check {
+    color: blueviolet;
 }
 
 @media all and (min-width: 480px) {
@@ -73,12 +269,71 @@ header > .nav {
         transition: all 0.5s;
     }
 
+    /* ESTILOS PARA LA SECCION MULTIMEDIA */
+
+    .seccionMultimedia {
+        display: grid;
+        grid-template-columns: 35% 65%;
+    }
+
+    .seccionMultimedia > article {
+        padding: 0 5px;
+    }
+
+    /* ESTILOS PARA LA SECCION TENDENCIA */
+
+    .seccionTendencia {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    .seccionTendencia > article {
+        padding: 0 10px;
+    }
+
+    /* ESTILOS PARA LA SECCION CARDS */
+
+    .card {
+        width: 300px;
+    }
+
+    .seccionCards {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-around;
+        gap: 20px;
+    }
+
+    /* ESTILOS PARA EL FOOTER */
+
+    footer {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        border-top: 1px solid white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    footer > h2 {
+        border: none;
+    }
+
+    footer > .redesSociales {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    footer > .redesSociales > a {
+        padding: 10px;
+    }
+
 }
 
 @media all and (min-width: 1024px) {
 
     /* ESTILOS PARA EL HEADER */
-    
+
     header{
         width: 100%;
         padding: 0 200px;
@@ -89,6 +344,7 @@ header > .nav {
         align-content: center;
         position: fixed;
         border-bottom: 1px solid rgba(255, 255, 255, 0.356);
+        background-color: black;
     }
 
     header > .nav {
@@ -108,5 +364,51 @@ header > .nav {
         transition: all 0.5s;
     }
 
+    /* ESTILOS MAIN */
+    main {
+        padding: 0 200px;
+    }
+
+    /* ESTILOS PARA LA SECCION MULTIMEDIA */
+
+    .seccionMultimedia {
+        padding-top: 80px;
+    }
+
+    .seccionMultimedia > article {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    /* ESTILOS PARA LA SECCION TENDENCIA */
+
+    .seccionTendencia > article {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 0 20px;
+    }
+
+    /* ESTILOS PARA LA SECCION CARDS */
+
+    .seccionCards {
+        grid-template-columns: auto auto auto auto;
+        justify-content: space-between;
+    }
+
+
+
+    /* ESTILOS PARA EL FOOTER */
+
+    footer {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    footer > .redesSociales {
+        /* border: 1px solid red; */
+        grid-template-columns: auto auto auto auto;
+    }
 
 }
