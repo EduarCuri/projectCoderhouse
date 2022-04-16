@@ -1,0 +1,112 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+/* ESTILOS MOBILE */
+
+/* ESTILOS PARA EL INDEX */
+
+/* ESTILOS HEADER */
+
+header {
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: auto;
+    padding: 0 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.356);;
+}
+
+header > .titulo {
+    /* border: 1px solid green; */
+    text-align: center;
+    padding: 10px 0;
+    color: white;
+}
+
+header > .nav {
+    /* border: 1px solid blue; */
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 15px;
+}
+
+.nav > a {
+    /* border: 1px solid red; */
+    text-decoration: none;
+    text-align: center;
+    padding: 8px;
+    border-radius: 4px;
+    color: white;
+    background-color: rgba(250, 1, 1, 0.671);
+}
+
+.nav > a:hover {
+    transform: translate(-5px, -5px);
+    box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.329);
+    transition: all 0.5s;
+}
+
+.nav > a:nth-child(5) {
+    grid-column: 1/3;
+}
+
+@media all and (min-width: 480px) {
+
+    /* ESTILOS PARA EL HEADER */
+
+    header {
+        padding: 0 50px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.356);
+        padding-bottom: 10px;
+    }
+
+    .nav > a:hover {
+        transform: translate(-5px, -5px);
+        box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.329);
+        transition: all 0.5s;
+    }
+
+}
+
+@media all and (min-width: 1024px) {
+
+    /* ESTILOS PARA EL HEADER */
+    
+    header{
+        width: 100%;
+        padding: 0 200px;
+        display: grid;
+        grid-template-columns: 30% 70%;
+        /* border: 1px solid red; */
+        height: 70px;
+        align-content: center;
+        position: fixed;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.356);
+    }
+
+    header > .nav {
+        /* border: 1px solid red; */
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .nav > a {
+        padding: 11px;
+    }
+
+    .nav > a:hover {
+        transform: translate(-5px, -5px);
+        box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.329);
+        transition: all 0.5s;
+    }
+
+
+}
