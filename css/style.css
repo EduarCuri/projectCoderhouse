@@ -314,6 +314,7 @@ main {
     transform: translate(-5px, -5px);
     transition: 0.5s;
     cursor: pointer;
+    box-shadow: 2px 2px 3px rgba(255, 255, 255, 0.479);
 }
 
 .imagenContacto {
