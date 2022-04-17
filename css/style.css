@@ -66,10 +66,6 @@ main {
 
 /* ESTILOS PARA LA SECCION MULTIMEDIA */
 
-.seccionMultimedia {
-    /* border: 1px solid red; */
-}
-
 .seccionMultimedia > article {
     color: white;
 }
@@ -107,7 +103,6 @@ main {
     height: 350px;
     /* border: 1px solid blue; */
 }
-
 
 .cajaImagenTendencia > img {
     width: 100%;
@@ -199,6 +194,130 @@ main {
 }
 
 
+
+
+
+/* ESTILOS PARA NOSOTROS */
+
+/* ESTILOS PARA LA SECCION DEL BANNER */
+.bannerConocenos {
+    /* border: 1px solid red; */
+    width: 100%;
+}
+
+.bannerConocenos > img {
+    width: 100%;
+}
+
+/* ESTILOS PARA LA DESCRIPCION CONOCENOS */
+
+.descripcionConocenos {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.descripcionConocenos > h2 {
+    padding: 10px 0;
+    font-size: 30px;
+}
+
+.descripcionConocenos > p {
+    text-align: center;
+    padding: 0 10px;
+}
+
+/* ESTILOS PARA LA SECCION IMAGENES CONOCENOS */
+
+.imagenesReferencialesConocenos > article {
+    width: 100%;
+    height: 342px;
+    overflow: hidden;
+    /* border: 1px solid yellow; */
+    margin-top: 20px;
+}
+
+.imagenesReferencialesConocenos > article > img {
+    width: 100%;
+}
+
+
+/* ESTILOS PARA LA SECCION HOMBRE */
+
+.tituloRopa {
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+
+
+
+/* ESTILOS PARA LA SECCION CONTACTO */
+
+.informacionContacto > h1 {
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 30px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formulario > label {
+    /* border: 1px solid red; */
+    color: white;
+    width: 100%;
+    display: inline-block;
+    height: 30px;
+    font-size: 25px;
+    text-align: center;
+    margin: 15px 0;
+}
+
+.formulario > input {
+    width: 90%;
+    border-radius: 5px;
+    height: 35px;
+    padding-left: 5px;
+}
+
+.formulario > textarea {
+    width: 90%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.formulario > .boton {
+    margin-bottom: 15px;
+    color: white;
+    background-color: rgba(250, 1, 1, 0.671);
+    border-radius: 5px;
+}
+
+.formulario > .boton:hover {
+    transform: translate(-5px, -5px);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.imagenContacto {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 4px;
+    /* border: 1px solid yellow; */
+}
+
+.imagenContacto > img {
+    width: 100%;
+    border-radius: 4px;
+}
 
 
 
@@ -304,6 +423,65 @@ footer .fa-calendar-check {
         gap: 20px;
     }
 
+
+
+
+    /* ESTILOS PARA LA SECCION CONOCENOS */
+
+    /* ESTILOS PARA LA SECCION IMAGENES CONOCENOS */
+
+    .imagenesReferencialesConocenos {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .imagenesReferencialesConocenos > article {
+        width: 300px;
+        height: 342px;
+    }
+
+    .imagenesReferencialesConocenos > article:nth-child(3) {
+        margin-bottom: 30px;
+    }
+
+
+
+
+    /* ESTILOS PARA SECCION ROPA HOMBRE */
+
+    .seccionCard {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-around;
+    }
+
+
+
+
+    /* ESTILOS PARA CONTACTO */
+
+    .imagenContacto {
+        width: 350px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 20%;
+    }
+
+    .informacionContacto {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .informacionContacto > h1 {
+        grid-column: 1/3;
+    }
+
+
     /* ESTILOS PARA EL FOOTER */
 
     footer {
@@ -367,18 +545,22 @@ footer .fa-calendar-check {
     /* ESTILOS MAIN */
     main {
         padding: 0 200px;
+        padding-top: 90px;
     }
 
     /* ESTILOS PARA LA SECCION MULTIMEDIA */
 
     .seccionMultimedia {
         padding-top: 80px;
+        /* border: 1px solid red; */
+        grid-template-columns: 50% 50%;
     }
 
     .seccionMultimedia > article {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        padding: 0 20px;
     }
 
     /* ESTILOS PARA LA SECCION TENDENCIA */
@@ -393,10 +575,47 @@ footer .fa-calendar-check {
     /* ESTILOS PARA LA SECCION CARDS */
 
     .seccionCards {
-        grid-template-columns: auto auto auto auto;
+        grid-template-columns: repeat(4, auto);
         justify-content: space-between;
     }
 
+
+
+
+    /* ESTILOS PARA LA SECCION CONOCENOS */
+
+    /* ESTILOS PARA LA SECCION IMAGENES CONOCENOS */
+
+    .imagenesReferencialesConocenos {
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        justify-content: space-between;
+    }
+
+
+
+
+    /* ESTILOS PARA SECCION ROPA HOMBRE */
+
+    .tituloRopa {
+        color: white;
+        /* border: 1px solid red; */
+    }
+
+    .seccionCard {
+        grid-template-columns: repeat(4, auto);
+    }
+
+
+
+
+    /* ESTILOS PARA LA SECCION CONTACTO */
+
+    .imagenContacto {
+        width: 75%;
+        height: 800px;
+        padding-left: 20%;
+    }
 
 
     /* ESTILOS PARA EL FOOTER */
