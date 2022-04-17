@@ -157,7 +157,7 @@ main {
     background-color: rgba(102, 100, 100, 0.418);
     border-radius: 4px;
     margin-bottom: 20px;
-    box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.329);
+    box-shadow: 5px 3px 5px rgba(255, 255, 255, 0.329);
 }
 
 .card:hover {
@@ -293,7 +293,7 @@ main {
     margin-bottom: 15px;
 }
 
-.formulario > .boton {
+.formulario :nth-child(7) {
     margin-bottom: 15px;
     color: white;
     background-color: rgba(250, 1, 1, 0.671);
