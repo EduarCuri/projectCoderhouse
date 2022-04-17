@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -28,6 +30,8 @@ header > .titulo {
     text-align: center;
     padding: 10px 0;
     color: white;
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
 }
 
 header > .nav {
@@ -221,6 +225,8 @@ main {
 .descripcionConocenos > h2 {
     padding: 10px 0;
     font-size: 30px;
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
 }
 
 .descripcionConocenos > p {
@@ -249,6 +255,8 @@ main {
     color: white;
     padding: 20px 0;
     text-align: center;
+    font-size: 30px;
+    font-family: 'Playfair Display', serif;
 }
 
 
@@ -260,6 +268,8 @@ main {
     color: white;
     padding: 10px 0;
     text-align: center;
+    font-size: 30px;
+    font-family: 'Playfair Display', serif;
     font-size: 30px;
 }
 
