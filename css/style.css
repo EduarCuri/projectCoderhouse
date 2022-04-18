@@ -30,7 +30,7 @@ header {
     display: grid;
     grid-template-columns: auto;
     padding-bottom: 10px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.356);;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.356);
 }
 
 header > .titulo {
@@ -113,6 +113,8 @@ main {
     width: 100%;
     overflow: hidden;
     height: 350px;
+    display: flex;
+    align-items: center;
     /* border: 1px solid blue; */
 }
 
@@ -164,10 +166,9 @@ main {
     padding: 10px 0;
     border: 1px solid red;
     width: 100%;
-    grid-template-columns: auto;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-
 }
 
 .card {
@@ -351,12 +352,13 @@ main {
 
 footer {
     /* border: 1px solid red; */
-    padding: 10px;
+    width: 85%;
+    padding: 10px 0;
     color: white;
 }
 
 footer h2 {
-    border-top: 1px solid white;
+    border-top: 1px solid rgba(255, 255, 255, 0.356);
     padding: 10px;
     text-align: center;
     font-size: 18px;
@@ -403,7 +405,6 @@ footer .fa-calendar-check {
     /* ESTILOS PARA EL HEADER */
 
     header {
-        padding: 0 50px;
         border-bottom: 1px solid rgba(255, 255, 255, 0.356);
         padding-bottom: 10px;
     }
