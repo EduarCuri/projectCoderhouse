@@ -16,11 +16,19 @@ body {
 
 /* ESTILOS HEADER */
 
+.container {
+    width: 100%;
+    border: 4px solid blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 header {
     /* border: 1px solid red; */
+    width: 85%;
     display: grid;
     grid-template-columns: auto;
-    padding: 0 10px;
     padding-bottom: 10px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.356);;
 }
@@ -65,7 +73,7 @@ header > .nav {
 /* ESTILOS PARA EL MAIN */
 
 main {
-    padding: 0 10px;
+    width: 85%;
 }
 
 /* ESTILOS PARA LA SECCION MULTIMEDIA */
@@ -120,12 +128,14 @@ main {
 }
 
 .seccionTendencia > article > h2 {
+    text-align: center;
     padding: 10px 0;
     font-size: 25px;
 }
 
 .seccionTendencia > article > p {
     text-align: center;
+    padding: 10px 0;
 }
 
 .botonConocer {
@@ -152,12 +162,17 @@ main {
 
 .seccionCards {
     padding: 10px 0;
-    /* border: 1px solid red; */
+    border: 1px solid red;
     width: 100%;
+    grid-template-columns: auto;
+    align-items: center;
+    justify-content: center;
+
 }
 
 .card {
-    /* border: 1px solid orange; */
+    border: 1px solid orange;
+    width: 100%;
     background-color: rgba(102, 100, 100, 0.418);
     border-radius: 4px;
     margin-bottom: 20px;
@@ -171,7 +186,7 @@ main {
 
 .imagenCard {
     width: 100%;
-    height: 350px;
+    height: 310px;
     overflow: hidden;
     /* border: 1px solid green; */
 }
@@ -189,7 +204,7 @@ main {
 }
 
 .contenidoCard > h2 {
-    padding: 10px 0;
+    padding: 5px 0;
 }
 
 .contenidoCard > p {
@@ -555,8 +570,9 @@ footer .fa-calendar-check {
 
     /* ESTILOS MAIN */
     main {
-        padding: 0 200px;
+        border: 1px solid red;
         padding-top: 90px;
+        width: 80%;
     }
 
     /* ESTILOS PARA LA SECCION MULTIMEDIA */
@@ -632,6 +648,7 @@ footer .fa-calendar-check {
     /* ESTILOS PARA EL FOOTER */
 
     footer {
+        width: 80%;
         display: flex;
         justify-content: space-around;
     }
