@@ -187,7 +187,7 @@ main {
 .card {
     /* border: 1px solid orange; */
     width: 100%;
-    height: 500px;
+    height: 510px;
     background-color: rgba(102, 100, 100, 0.418);
     border-radius: 4px;
     margin-bottom: 20px;
@@ -225,7 +225,23 @@ main {
 
 .contenidoCard > p {
     text-align: center;
-    padding-bottom: 10px;
+    padding: 0 5px 10px 5px;
+}
+
+.contenidoCard > a {
+    /* border: 1px solid yellow; */
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 4px;
+    background-color: rgba(250, 1, 1, 0.671);
+    transition: 0.5s;
+}
+
+.contenidoCard > a:hover {
+    transform: translate(-3px, -2px);
+    box-shadow: 3px 2px 5px rgba(255, 255, 255, 0.329);
 }
 
 
