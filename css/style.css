@@ -47,6 +47,13 @@ header {
     font-size: 30px;
 }
 
+.titulo > a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+}
+
 .containerHeader .nav {
     /* border: 1px solid blue; */
     display: grid;
@@ -63,12 +70,12 @@ header {
     color: white;
     background-color: rgba(250, 1, 1, 0.671);
     cursor: pointer;
+    transition: all 0.5s;
 }
 
 .nav > a:hover {
-    transform: translate(-5px, -5px);
+    transform: translate(-2px, -3px);
     box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.329);
-    transition: all 0.5s;
 }
 
 .nav > a:nth-child(5) {
@@ -149,21 +156,22 @@ main {
     padding: 10px 0;
     /* border: 1px solid yellow; */
     margin-top: 10px;
+    transition: 0.5s;
+}
+
+.botonConocer:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 3px 1px 3px rgba(255, 255, 255, 0.329);
 }
 
 .botonConocer > a {
     text-decoration: none;
     color: white;
-    background-color: red;
+    background-color: rgba(250, 1, 1, 0.671);
     padding: 10px;
     border-radius: 4px;
 }
 
-.botonConocer:hover {
-    transform: translate(-2px, -2px);
-    box-shadow: 2px 2px 4px white;
-    transition: 0.5s;
-}
 
 /* ESTILOS PARA SECCION CARDS */
 
@@ -179,16 +187,17 @@ main {
 .card {
     /* border: 1px solid orange; */
     width: 100%;
-    height: 520px;
+    height: 500px;
     background-color: rgba(102, 100, 100, 0.418);
     border-radius: 4px;
     margin-bottom: 20px;
-    box-shadow: 5px 3px 5px rgba(255, 255, 255, 0.329);
+    box-shadow: 3px 1px 3px rgba(255, 255, 255, 0.329);
+    transition: all 0.7s;
 }
 
 .card:hover {
     transform: translate(-5px, -5px);
-    transition: 0.7s;
+    box-shadow: 5px 3px 6px rgba(255, 255, 255, 0.329);
 }
 
 .imagenCard {
@@ -260,10 +269,17 @@ main {
 
 .imagenesReferencialesConocenos > article {
     width: 100%;
-    height: 342px;
+    height: 310px;
     overflow: hidden;
     /* border: 1px solid yellow; */
     margin-top: 20px;
+    box-shadow: 3px 2px 3px rgba(255, 255, 255, 0.329);
+    transition: all 0.5s;
+}
+
+.imagenesReferencialesConocenos > article:hover {
+    transform: translate(-5px, -5px);
+    box-shadow: 5px 3px 6px rgba(255, 255, 255, 0.329);
 }
 
 .imagenesReferencialesConocenos > article > img {
@@ -330,28 +346,34 @@ main {
     color: white;
     background-color: rgba(250, 1, 1, 0.671);
     border-radius: 5px;
+    transition: 0.5s;
 }
 
 .formulario > .boton:hover {
     transform: translate(-5px, -5px);
-    transition: 0.5s;
     cursor: pointer;
     box-shadow: 2px 2px 3px rgba(255, 255, 255, 0.479);
 }
 
 .imagenContacto {
+    /* border: 1px solid yellow; */
     width: 100%;
-    height: 400px;
+    height: 380px;
     overflow: hidden;
     border-radius: 4px;
-    /* border: 1px solid yellow; */
 }
+
 
 .imagenContacto > img {
     width: 100%;
     border-radius: 4px;
+    transition: 0.5s;
 }
 
+.imagenContacto > img:hover {
+    transform: translate(-3px, -3px);
+    box-shadow: 3px 5px 5px rgba(255, 255, 255, 0.479);
+}
 
 
 /* ESTILOS PARA EL FOOTER */
@@ -416,9 +438,8 @@ footer .fa-calendar-check {
     }
 
     .nav > a:hover {
-        transform: translate(-5px, -5px);
+        transform: translate(-2px, -3px);
         box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.329);
-        transition: all 0.5s;
     }
 
     /* ESTILOS PARA LA SECCION MULTIMEDIA */
@@ -582,12 +603,12 @@ footer .fa-calendar-check {
 
     .nav > a {
         padding: 11px;
+        transition: all 0.5s;
     }
 
     .nav > a:hover {
-        transform: translate(-5px, -5px);
+        transform: translate(-2px, -3px);
         box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.329);
-        transition: all 0.5s;
     }
 
     /* ESTILOS MAIN */
